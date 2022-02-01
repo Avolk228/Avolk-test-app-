@@ -15,10 +15,37 @@ class _AdScreenState extends State<AdScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          actions: [],
-          title: Text(widget.title),
-          centerTitle: true,
-          backgroundColor: AppColors.mainColor),
+          iconTheme: IconThemeData(color: AppColors.mainColor),
+          actions: [
+            SizedBox(width: 15, child: Icon(Icons.favorite_border)),
+            SizedBox(
+              width: 17,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: 5,
+                ),
+                SizedBox(
+                  height: 10,
+                  child: Icon(Icons.arrow_upward),
+                ),
+                Icon(Icons.space_bar),
+              ],
+            ),
+            SizedBox(
+              width: 23,
+            )
+          ],
+          titleSpacing: -9,
+          title: Text(
+            widget.title,
+            style: TextStyle(
+              color: AppColors.mainColor,
+            ),
+          ),
+          backgroundColor: Colors.white),
       body: Container(
         child: const Text('123'),
         color: Colors.green[900],
