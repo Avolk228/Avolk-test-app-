@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test1/resources/app_colors.dart';
+import 'package:AvolkTestApp/resources/app_colors.dart';
 
 class AdScreen extends StatefulWidget {
   final String title;

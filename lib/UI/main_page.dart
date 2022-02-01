@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test1/resources/app_colors.dart';
+import 'package:AvolkTestApp/resources/app_colors.dart';
 
 import 'ad_screen.dart';
 
