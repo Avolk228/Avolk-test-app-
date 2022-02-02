@@ -15,8 +15,8 @@ class Carousel extends StatelessWidget {
                     child: Image.network(
                   item,
                   fit: BoxFit.cover,
-                  width: 1000,
-                  height: 800,
+                  width: 471,
+                  height: 310,
                 )),
               ))
           .toList(),

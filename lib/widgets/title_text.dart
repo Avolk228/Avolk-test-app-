@@ -13,7 +13,12 @@ class TitleText extends StatelessWidget {
     return Text(
       data,
       style: TextStyle(
-          fontSize: size, color: Colors.black, fontFamily: 'MuseoCyrl'),
+          fontSize: size,
+          color: Colors.black,
+          fontFamily: 'museocyrl_100',
+          fontWeight: FontWeight.bold,
+          letterSpacing: 0.03,
+          height: 1.2),
     );
   }
 }

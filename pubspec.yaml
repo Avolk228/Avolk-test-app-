@@ -18,8 +18,8 @@ dev_dependencies:
   flutter_lints: ^1.0.0
 flutter:
   fonts:
-    - family: Museo Cyrl
+    - family: museocyrl_100
       fonts:
-        - asset: fonts/museocyrl_100.otf
+        - asset: lib\resources\fonts\museocyrl_100.otf
           style: normal
   uses-material-design: true
