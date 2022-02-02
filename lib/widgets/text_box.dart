@@ -8,14 +8,18 @@ class TextBox extends StatelessWidget {
   final List<double> margin;
   final Color color;
   bool dscrp = false;
-  TextBox(
-      {required this.data,
-      required this.width,
-      required this.height,
-      required this.margin,
-      required this.color,
-      bool isDescription = false}) {
+  bool map = false;
+  TextBox({
+    required this.data,
+    required this.width,
+    required this.height,
+    required this.margin,
+    required this.color,
+    bool isDescription = false,
+    bool isMap = false,
+  }) {
     dscrp = isDescription;
+    map = isMap;
   }
 
   @override
@@ -25,9 +29,11 @@ class TextBox extends StatelessWidget {
       child: Text(
         data,
         style: TextStyle(
-            color: color,
-            height: 1.2,
-            fontWeight: dscrp ? FontWeight.w300 : FontWeight.normal),
+          color: color,
+          height: 1.3,
+          fontWeight: dscrp ? FontWeight.w300 : FontWeight.normal,
+          letterSpacing: map ? 0.2 : 0.4,
+        ),
       ),
       width: width,
       height: height,
