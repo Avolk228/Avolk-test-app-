@@ -1,4 +1,6 @@
+import 'package:AvolkTestApp/UI/ad_resourses/ad_strings.dart';
 import 'package:AvolkTestApp/widgets/ad.dart';
+import 'package:AvolkTestApp/widgets/app_bar_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:AvolkTestApp/resources/app_colors.dart';
@@ -17,28 +19,7 @@ class _AdScreenState extends State<AdScreen> {
     return Scaffold(
       appBar: AppBar(
           iconTheme: IconThemeData(color: AppColors.mainColor),
-          actions: [
-            SizedBox(width: 15, child: Icon(Icons.favorite_border)),
-            SizedBox(
-              width: 17,
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  height: 5,
-                ),
-                SizedBox(
-                  height: 10,
-                  child: Icon(Icons.arrow_upward),
-                ),
-                Icon(Icons.space_bar),
-              ],
-            ),
-            SizedBox(
-              width: 23,
-            )
-          ],
+          actions: [AppBarIcons()],
           titleSpacing: -9,
           title: Text(
             widget.title,
@@ -48,8 +29,8 @@ class _AdScreenState extends State<AdScreen> {
           ),
           backgroundColor: Colors.white),
       body: Ad(
-        title: 'Пропал кот',
-        adress: 'Красноармейская улица, 37, Ростов-на-Дону',
+        title: AdStrings.titleString,
+        adress: AdStrings.adressString,
       ),
     );
   }
