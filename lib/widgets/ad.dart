@@ -17,6 +17,18 @@ class Ad extends StatelessWidget {
 
   List<double> m = AdTextParameters.titleMargin;
 
+  void openURL(String flag) {
+    switch (flag) {
+      case 'vk':
+        break;
+      case 'ok':
+        break;
+      case 'fb':
+        break;
+      default:
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -63,7 +75,35 @@ class Ad extends StatelessWidget {
             height: 20,
             margin: AdTextParameters.shareMargin,
             color: Colors.black,
-          )
+          ),
+          Row(
+            children: [
+              IconButton(
+                  onPressed: () => openURL('vk'),
+                  icon: Image.asset(
+                    'lib\\resources\\images\\icons8_vk_48.png',
+                    width: 44.0,
+                    height: 44.0,
+                  )),
+              IconButton(
+                onPressed: () => openURL('ok'),
+                icon: Image(
+                  image: AssetImage('lib\\resources\\images\\icons8_ok_48.png'),
+                  width: 44,
+                  height: 44,
+                ),
+              ),
+              IconButton(
+                onPressed: () => openURL('fb'),
+                icon: Image(
+                  image: AssetImage(
+                      'lib\\resources\\images\\icons8_facebook_64.png'),
+                  width: 44,
+                  height: 44,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
