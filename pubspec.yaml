@@ -10,10 +10,16 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  carousel_slider: ^4.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
 flutter:
+  fonts:
+    - family: Museo Cyrl
+      fonts:
+        - asset: fonts/museocyrl_100.otf
+          style: normal
   uses-material-design: true

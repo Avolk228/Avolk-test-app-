@@ -1,3 +1,4 @@
+import 'package:AvolkTestApp/widgets/ad.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:AvolkTestApp/resources/app_colors.dart';
@@ -46,9 +47,9 @@ class _AdScreenState extends State<AdScreen> {
             ),
           ),
           backgroundColor: Colors.white),
-      body: Container(
-        child: const Text('123'),
-        color: Colors.green[900],
+      body: Ad(
+        title: 'Пропал кот',
+        adress: 'Красноармейская улица, 37, Ростов-на-Дону',
       ),
     );
   }
