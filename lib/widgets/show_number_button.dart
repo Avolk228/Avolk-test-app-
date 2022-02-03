@@ -6,8 +6,7 @@ class ShowNumberButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
-      width: 331,
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 22),
       height: 45,
       alignment: Alignment.center,
       child: const Text(
