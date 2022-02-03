@@ -1,8 +1,11 @@
 import 'package:AvolkTestApp/UI/ad_resourses/ad_strings.dart';
 import 'package:AvolkTestApp/widgets/ad.dart';
+import 'package:AvolkTestApp/widgets/ad_carousel.dart';
 import 'package:AvolkTestApp/widgets/app_bar_icons.dart';
+import 'package:AvolkTestApp/widgets/carousel.dart';
 import 'package:AvolkTestApp/widgets/info_part.dart';
 import 'package:AvolkTestApp/widgets/share_block.dart';
+import 'package:AvolkTestApp/widgets/title_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:AvolkTestApp/resources/app_colors.dart';
@@ -32,6 +35,7 @@ class _AdScreenState extends State<AdScreen> {
           backgroundColor: Colors.white),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Ad(
               title: AdStrings.titleString,
@@ -46,6 +50,20 @@ class _AdScreenState extends State<AdScreen> {
               endIndent: 22,
             ),
             InfoPart(),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 22),
+              child: TitleText(
+                input_data: AdStrings.similar,
+                input_size: 20,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            AdCarousel(),
           ],
         ),
       ),
