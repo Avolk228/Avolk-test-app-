@@ -1,0 +1,4 @@
+#Fri Feb 04 16:44:22 MSK 2022
+base.0=F\:\\flutter_projects\\Avolk-test-app-\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
