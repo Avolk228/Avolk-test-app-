@@ -8,10 +8,6 @@ void openURL(String flag) {
   switch (flag) {
     case 'vk':
       break;
-    case 'ok':
-      break;
-    case 'fb':
-      break;
     case 'share':
       break;
     default:
@@ -25,7 +21,7 @@ class ShareBlock extends StatelessWidget {
       children: [
         TextBox(
           data: AdStrings.shareString,
-          fontSize: 14,
+          fontSize: 16,
           margin: AdTextParameters.shareMargin,
           color: Colors.black,
         ),

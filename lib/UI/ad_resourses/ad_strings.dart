@@ -7,6 +7,8 @@ class AdStrings {
   static const numberString = 'Показать номер хозяина';
   static const shareString = 'Поделиться';
   static const similar = 'Похожие пропавшие';
+  static const phoneNumberString = 'Номер телефона хозяина';
+  static const phoneNumber = '8-800-555-35-35';
 }
 
 class SimilarAdStrings {
