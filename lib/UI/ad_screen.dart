@@ -50,7 +50,7 @@ class _AdScreenState extends State<AdScreen> {
               endIndent: 22,
             ),
             InfoPart(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(

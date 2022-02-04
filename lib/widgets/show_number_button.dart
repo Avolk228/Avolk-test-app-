@@ -22,8 +22,10 @@ class ShowNumberButton extends StatelessWidget {
                   Center(
                     child: Text(
                       AdStrings.phoneNumberString,
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.mainColor),
                     ),
                   ),
                   SizedBox(
@@ -33,7 +35,9 @@ class ShowNumberButton extends StatelessWidget {
                     child: Text(
                       AdStrings.phoneNumber,
                       style: TextStyle(
-                          fontSize: 20, fontWeight: FontWeight.normal),
+                          fontSize: 20,
+                          fontWeight: FontWeight.normal,
+                          color: AppColors.mainColor),
                     ),
                   ),
                 ],

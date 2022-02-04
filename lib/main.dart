@@ -1,3 +1,4 @@
+import 'package:AvolkTestApp/resources/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:AvolkTestApp/UI/main_page.dart';
 
@@ -10,8 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Test app',
-      home: MainPage(title: 'Avolk Test App'),
+      title: AppStrings.title,
+      home: MainPage(title: AppStrings.appBar),
     );
   }
 }
